@@ -6,6 +6,7 @@ const profileSchema = new mongoose.Schema({
     balance: { type: Number, default: 100 },
     dailyLastUsed: { type: Number, default: 0 },
     coinflipLastUsed: {type: Number, default: 0},
+    customRoleId: { type: String, default: ""},
 });
 
 const model = mongoose.model("gambledb", profileSchema);
